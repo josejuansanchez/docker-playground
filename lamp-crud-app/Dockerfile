@@ -11,7 +11,8 @@ RUN apt-get update \
 
 RUN apt-get install git -y \ 
     && git clone https://github.com/josejuansanchez/iaw-practica-lamp-v2 /app \
-    && cp -R /app/src/* /var/www/html/
+    && cp -R /app/src/* /var/www/html/ \
+    && rm /var/www/html/index.html
 
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
