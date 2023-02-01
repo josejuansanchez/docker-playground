@@ -1,7 +1,4 @@
-FROM ubuntu
-
-LABEL title="apache-lamp" \
-  author="José Juan Sánchez"
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive 
 ENV TZ=Europe/Madrid
